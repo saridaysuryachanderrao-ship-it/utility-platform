@@ -30,7 +30,7 @@ export function ToolCard({ tool }: ToolCardProps) {
 
   return (
     <Link
-      href={`/tools/${tool.slug}`}
+      href={`/tools/${tool.category}/${tool.slug}`}
       className="group relative flex flex-col justify-between p-6 rounded-2xl bg-card border border-border/60 shadow-sm hover:shadow-xl hover:border-primary/40 transition-all duration-300 hover:-translate-y-1 overflow-hidden"
     >
       <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-primary/10 to-transparent rounded-bl-full pointer-events-none group-hover:scale-110 transition-transform duration-300" />
