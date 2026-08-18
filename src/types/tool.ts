@@ -1,3 +1,5 @@
+import { BrowserCapabilityId } from "./execution";
+
 export type ToolCategory =
   | "text"
   | "image"
@@ -26,4 +28,6 @@ export interface ToolDefinition {
   status: ToolStatus;
   version: string;
   browserRequirements?: BrowserRequirement[];
+  requiredCapabilities?: BrowserCapabilityId[];
+  workerSupported?: boolean;
 }
