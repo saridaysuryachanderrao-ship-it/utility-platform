@@ -1,4 +1,5 @@
 import { ToolCategory, ToolDefinition } from "@/types/tool";
+import { wordCounterToolDefinition } from "./text/word-counter";
 
 export class ToolRegistry {
   private tools: Map<string, ToolDefinition> = new Map();
@@ -45,6 +46,6 @@ export class ToolRegistry {
   }
 }
 
-export const initialTools: ToolDefinition[] = [];
+export const initialTools: ToolDefinition[] = [wordCounterToolDefinition];
 
 export const toolRegistry = new ToolRegistry(initialTools);
